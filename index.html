@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EduGenie – Learning Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="logo">🎓 EduGenie</div>
+    <span>Google Gemini Powered Learning Assistant</span>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Learn smarter with <span>EduGenie</span></h1>
+      <p>Ask questions, create notes, and practice quizzes with your AI learning assistant.</p>
+    </section>
+    <div class="grid">
+      <div class="card">
+        <h2>🤖 Ask EduGenie</h2>
+        <textarea id="question" placeholder="Ask a study question..."></textarea>
+        <button onclick="askDemo()">Ask EduGenie</button>
+        <div id="answer" class="answer">Demo mode: enter a question to see a sample response.</div>
+      </div>
+      <div class="card">
+        <h2>📝 Quick Study Tools</h2>
+        <button class="secondary" onclick="makeNotes()">Generate Notes</button>
+        <button class="secondary" onclick="makeQuiz()">Generate Quiz</button>
+        <div id="toolOutput" class="answer"></div>
+      </div>
+    </div>
+  </main>
+  <footer>EduGenie • Student Learning Assistant • Demo</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
